@@ -14,9 +14,7 @@
     padding: 2rem 2rem;
     max-width: 65vh;
     text-align: center;
-    margin-top: 3.8rem;
-    justify-content: center;
-    align-items: center;
+    margin: 1.5rem auto;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 hr{
