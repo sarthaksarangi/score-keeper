@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;500;600;700&display=swap');
+
+  
+   
+*{
+    
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.container{
+    margin: auto;
+    border: 5px solid black;
+    border-radius: 2rem;
+    padding: 2rem 2rem;
+    max-width: 65vh;
+    text-align: center;
+    margin-top: 3.8rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+hr{
+    padding: 0 5px;
+   border: 3px solid black;
+   border-radius: 2rem ;
+}
+img{
+    max-width: 40vh;
+    height: auto;
+    border: 0 solid;
+    border-radius: 5px;
+}
+@media screen and (max-width: 720px) {
+    .container {
+        width: 80%;
+    }
+    .img{
+        width: 20%;
+        height: auto;
+    }
+}
+
+
+
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+.button-85{
+
+    margin: 1rem;
+}
+.line{
+    display: block;
+    margin: 2px;
+    
+}
+.green{
+    color: green;
+}
+.red{
+    color: red;
+}
