@@ -13,7 +13,10 @@ p1.addEventListener('click',(e)=>{
     if(!gameOver){
         score1++;
         if(score1===winScore){
-            gameOver = true       
+            gameOver = true      
+            p1Display.style.color = 'green'
+            p2Display.style.color = 'red'
+
          }
         p1Display.innerText = score1;
     }   
@@ -22,7 +25,9 @@ p2.addEventListener('click',(e)=>{
     if(!gameOver){
         score2++;
         if(score2===winScore){
-            gameOver = true       
+            gameOver = true   
+            p1Display.style.color = 'red'
+            p2Display.style.color = 'green'  
          }
         p2Display.innerText = score2;
     }   
@@ -39,6 +44,9 @@ function resetGame(){
     gameOver = false
     score1 = 0;
     score2 = 0;
+    p1Display.style.color = 'black'
+    p2Display.style.color = 'black'
     document.querySelector('#player1').innerText = score1;
     document.querySelector('#player2').innerText = score2;
+
 }
